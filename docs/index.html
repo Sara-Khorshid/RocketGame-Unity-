@@ -2,32 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Rocket 🚀 - Unity WebGL Game</title>
+    <title>🚀 Rocket Game - Unity WebGL</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
       /* Full-page gradient background */
-      body,
-      html {
+      html,
+      body {
         margin: 0;
         padding: 0;
         width: 100%;
         height: 100%;
         background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+        font-family: "Arial", sans-serif;
+        color: #fff;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        font-family: "Arial", sans-serif;
-        color: #fff;
         overflow: hidden;
       }
 
-      /* Game header */
       header {
         text-align: center;
         margin-bottom: 20px;
       }
+
       header h1 {
         font-size: 3em;
         margin: 0;
@@ -35,7 +35,7 @@
         text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
       }
 
-      /* Unity container styling */
+      /* Unity container */
       #unity-container {
         position: relative;
         width: 960px;
@@ -49,6 +49,7 @@
       canvas {
         display: block;
         width: 100%;
+        height: auto;
         border-radius: 12px;
       }
 
@@ -78,16 +79,18 @@
         transition: width 0.3s ease;
       }
 
-      /* Footer */
+      /* Footer with fixed fullscreen button */
       #unity-footer {
         position: absolute;
         bottom: 10px;
+        left: 0;
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end; /* align items to the right */
         align-items: center;
-        padding: 0 20px;
-        color: #fff;
+        padding: 0 20px; /* space from edges */
+        gap: 10px; /* space between footer items */
+        box-sizing: border-box;
         font-weight: bold;
       }
 
@@ -98,7 +101,9 @@
         border-radius: 6px;
         background: rgba(255, 255, 255, 0.05);
         transition: all 0.3s;
+        flex-shrink: 0; /* prevents shrinking on small screens */
       }
+
       #unity-fullscreen-button:hover {
         background: rgba(255, 111, 97, 0.9);
         color: #000;
@@ -112,6 +117,12 @@
         }
         header h1 {
           font-size: 2em;
+        }
+      }
+
+      @media (max-width: 600px) {
+        #unity-footer {
+          justify-content: center; /* center footer on very small screens */
         }
       }
     </style>
@@ -141,7 +152,7 @@
     <script>
       const canvas = document.getElementById("unity-canvas");
       const buildUrl = "Build";
-      const loaderUrl = buildUrl + "/Web.loader.js";
+      const loaderUrl = "Build/Web.loader.js";
 
       function unityShowBanner(msg, type) {
         const warningBanner = document.getElementById("unity-warning");
@@ -150,6 +161,7 @@
         div.style.padding = "10px";
         div.style.marginTop = "5px";
         div.style.borderRadius = "5px";
+        div.style.fontWeight = "bold";
         if (type === "error") div.style.background = "red";
         else div.style.background = "yellow";
         warningBanner.appendChild(div);
@@ -157,9 +169,9 @@
       }
 
       const config = {
-        dataUrl: buildUrl + "/Web.data",
-        frameworkUrl: buildUrl + "/Web.framework.js",
-        codeUrl: buildUrl + "/Web.wasm",
+        dataUrl: "Build/Web.data",
+        frameworkUrl: "Build/Web.framework.js",
+        codeUrl: "Build/Web.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Rocket",
@@ -180,6 +192,14 @@
             document.getElementById("unity-loading-bar").style.display = "none";
             document.getElementById("unity-fullscreen-button").onclick = () =>
               unityInstance.SetFullscreen(1);
+
+            // Responsive canvas resizing
+            function resizeCanvas() {
+              canvas.width = canvas.clientWidth;
+              canvas.height = canvas.clientHeight;
+            }
+            window.addEventListener("resize", resizeCanvas);
+            resizeCanvas();
           })
           .catch(console.error);
       };
