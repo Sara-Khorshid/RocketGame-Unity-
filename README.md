@@ -40,7 +40,7 @@ This project demonstrates my ability to apply programming logic and game design 
 This repository is organized to show clean separation of functionality:
 
 
-<pre> ```text Assets/ 
+<pre> Assets/ 
   ├── Scenes/ 
   │ └── MainScene.unity 
   ├── Scripts/ 
@@ -48,7 +48,7 @@ This repository is organized to show clean separation of functionality:
   │ ├── ObstacleHandler.cs 
   │ └── GameStateManager.cs 
   ├── Prefabs/ 
-  └── Art/ ``` </pre>
+  └── Art/ </pre>
 
 
 
