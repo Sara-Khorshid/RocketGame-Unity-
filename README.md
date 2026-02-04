@@ -5,30 +5,29 @@ The game focuses on physics-based movement, game logic, and modular C# code orga
 
 ## 🚀 Rocket Game Screenshots
 
-<p align="center">
+<div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;">
+
   <img src="https://github.com/user-attachments/assets/c7635f75-7fc9-47d5-9d5f-a1ec52845c1f" 
        alt="Rocket Game Screenshot 1" 
-       width="700" 
-       style="border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.5); margin:10px;">
-       
+       width="400" 
+       style="border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.5);">
+
   <img src="https://github.com/user-attachments/assets/b3abcee6-3738-44e3-a582-2c1fe066e3b2" 
        alt="Rocket Game Screenshot 2" 
-       width="700" 
-       style="border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.5); margin:10px;">
-</p>
+       width="400" 
+       style="border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.5);">
 
-<p align="center">
   <img src="https://github.com/user-attachments/assets/cdc9fea5-f6f2-42d1-95d0-c903c4ba8682" 
        alt="Rocket Game Screenshot 3" 
-       width="700" 
-       style="border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.5); margin:10px;">
-       
+       width="400" 
+       style="border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.5);">
+
   <img src="https://github.com/user-attachments/assets/ad04425e-3cfd-4a89-9947-c5c86a784393" 
        alt="Rocket Game Screenshot 4" 
-       width="700" 
-       style="border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.5); margin:10px;">
-</p>
+       width="400" 
+       style="border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.5);">
 
+</div>
 
 
 ## ▶ Playable Version
