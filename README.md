@@ -39,49 +39,14 @@ This project demonstrates my ability to apply programming logic and game design 
 
 This repository is organized to show clean separation of functionality:
 
-Assets/
-├── Scenes/
-│ └── MainScene.unity
-├── Scripts/
-│ ├── RocketController.cs
-│ ├── ObstacleHandler.cs
-│ └── GameStateManager.cs
-├── Prefabs/
-└── Art/
 
----
+### Notes:
+1. Use `plaintext` or `text` after the opening backticks to avoid syntax highlighting interfering with tree characters.
+2. Make sure all spacing and alignment is exactly as in your example, so the tree looks correct.
+3. You can also use just triple backticks without specifying `plaintext`:
+
+```markdown
 
 
-- `RocketController.cs` – Handles player input and physics movement  
-- `ObstacleHandler.cs` – Manages interactions and responses to collisions  
-- `GameStateManager.cs` – Controls win/lose conditions and scene transitions  
-
----
-
-## 🚀 Learning Goals
-
-Through developing this project I strengthened my skills in:
-- Game development fundamentals in Unity
-- Using C# with object-oriented design
-- Applying math and physics concepts in gameplay
-- Organizing game code for readability and extendability
-
----
-
-## 👩‍💻 About Me
-
-I work on Unity projects because I enjoy the creative and technical combination of game development. I am continuously learning new tools and patterns to become a better developer. I’m currently also developing another game project called **Galaxy Strike**, which I can share upon request.
-
----
-
-## 📩 Notes
-
-If you would like to review additional source code, project files, or other formats (e.g., the full Unity project for Galaxy Strike), I will be happy to provide them.
-
----
-
-## 📧 Contact
-
-For further questions or clarification, feel free to contact me via email: [Sara_Khorshid@proton.me]
 
 
