@@ -40,12 +40,15 @@ This project demonstrates my ability to apply programming logic and game design 
 This repository is organized to show clean separation of functionality:
 
 
-### Notes:
-1. Use `plaintext` or `text` after the opening backticks to avoid syntax highlighting interfering with tree characters.
-2. Make sure all spacing and alignment is exactly as in your example, so the tree looks correct.
-3. You can also use just triple backticks without specifying `plaintext`:
-
-```markdown
+Assets/
+├── Scenes/
+│ └── MainScene.unity
+├── Scripts/
+│ ├── RocketController.cs
+│ ├── ObstacleHandler.cs
+│ └── GameStateManager.cs
+├── Prefabs/
+└── Art/
 
 
 
