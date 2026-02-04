@@ -3,6 +3,11 @@
 This is a Unity game project created independently as part of my learning journey in game development.  
 The game focuses on physics-based movement, game logic, and modular C# code organization.
 
+## ▶ Playable Version
+
+Play the game here:  
+https://sara-khorshid.github.io/RocketGame-Unity-/
+
 ---
 
 ## 🎮 Project Overview
@@ -50,11 +55,6 @@ This repository is organized to show clean separation of functionality:
   ├── Prefabs/ 
   └── Art/ </pre>
 
----
 
-## ▶ Playable Version
-
-Play the game here:  
-https://sara-khorshid.github.io/RocketGame-Unity-/
 
 
