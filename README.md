@@ -50,6 +50,11 @@ This repository is organized to show clean separation of functionality:
   ├── Prefabs/ 
   └── Art/ </pre>
 
+---
 
+## ▶ Playable Version
+
+Play the game here:  
+https://sara-khorshid.github.io/RocketGame-Unity-/
 
 
