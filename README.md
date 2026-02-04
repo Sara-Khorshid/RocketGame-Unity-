@@ -40,15 +40,15 @@ This project demonstrates my ability to apply programming logic and game design 
 This repository is organized to show clean separation of functionality:
 
 
-Assets/
-├── Scenes/
-│ └── MainScene.unity
-├── Scripts/
-│ ├── RocketController.cs
-│ ├── ObstacleHandler.cs
-│ └── GameStateManager.cs
-├── Prefabs/
-└── Art/
+<pre> ```text Assets/ 
+  ├── Scenes/ 
+  │ └── MainScene.unity 
+  ├── Scripts/ 
+  │ ├── RocketController.cs 
+  │ ├── ObstacleHandler.cs 
+  │ └── GameStateManager.cs 
+  ├── Prefabs/ 
+  └── Art/ ``` </pre>
 
 
 
