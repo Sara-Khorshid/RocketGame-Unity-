@@ -61,6 +61,8 @@ This repository is organized to show clean separation of functionality:
   ├── Prefabs/ 
   └── Art/ </pre>
 
+---
 
+> ⚠️ Note: Project developed and maintained entirely by Sara Khorshid. Early setup commits were from a shared machine.
 
 
