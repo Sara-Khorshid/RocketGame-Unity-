@@ -55,9 +55,9 @@ This repository is organized to show clean separation of functionality:
   ├── Scenes/ 
   │ └── MainScene.unity 
   ├── Scripts/ 
-  │ ├── RocketController.cs 
-  │ ├── ObstacleHandler.cs 
-  │ └── GameStateManager.cs 
+  │ ├── Movement.cs 
+  │ ├── CollisionHandler.cs 
+  │ └── Oscillator.cs 
   ├── Prefabs/ 
   └── Art/ </pre>
 
